@@ -15,6 +15,11 @@ header h2{
   padding: 10px;
   position:absolute;
 }
+nav h1{
+  margin: 0 auto;
+  float:left;
+  left: 500px;
+}
 div{
   float:right;
 
@@ -32,13 +37,53 @@ nav li:hover{
 * {
   font-family: Helvetica, Arial, sans-serif;
 }
-.github{
-  width:10px;
-  height:10px;
-}
 #profile{
   float:left;
   width: 800px;
   height: 800px;
   border: 5px solid gray;
 }
+/*Let's center a div*/
+.center {
+  margin:0 auto;
+  width: 70%;
+  padding: 10px;
+}
+.center img{
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+}
+#about{
+  float:left;
+  width: 800px;
+  height: 200px;
+  border: 5px solid gray;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: black;
+}
+#about h3{
+  text-align: center;
+  padding: 10px;
+}
+/*Let's make a div below another div*/
+#featured {
+  float:left;
+  width: 800px;
+  height: 200px;
+  border: 5px solid gray;
+  text-align: center;
+}
+#featured li{
+  display:inline-block;
+  padding: 15px 10px;
+  position: relative;
+  right:100px;
+  overflow:hidden;
+}
+/*Let's center an image*/
