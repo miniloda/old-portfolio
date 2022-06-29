@@ -1,0 +1,44 @@
+body{
+  background-image: url("../images/main-background.jpg");
+  min-width: 800px;
+}
+
+header{
+  background-color: gray;
+  height:90px;
+  color: white;
+  
+}
+header h2{
+  float:left;
+  left: 100px;
+  padding: 10px;
+  position:absolute;
+}
+div{
+  float:right;
+
+}
+nav li{
+  display:inline-block;
+  padding: 15px 10px;
+  position: relative;
+  right:100px;
+  overflow:hidden;
+}
+nav li:hover{
+  color: black;
+}
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.github{
+  width:10px;
+  height:10px;
+}
+#profile{
+  float:left;
+  width: 800px;
+  height: 800px;
+  border: 5px solid gray;
+}
