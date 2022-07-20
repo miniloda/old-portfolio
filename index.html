@@ -1,30 +1,62 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lennon</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/css/index.css">
+    <script src="https://kit.fontawesome.com/d5eb826ace.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <div class = "top">
-      <h1>Lennon</h1>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="header">
+      <div class = "head">
+      <h1 class="header__title">
+          <img src="src/img/logo.png" alt="logo" class="header__title__logo">
+      </h1>
+      <nav class="header__nav">
+        
+        <ul class="header__nav__list">
+          <li class="header__nav__list__item">
+            <a href="index.html" class="header__nav__list__item__link">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li class="header__nav__list__item">
+            <a href="about.html" class="header__nav__list__item__link">
+              <span class="header__nav__list__item__text">About</span>
+            </a>
+          </li>
+          <li class="header__nav__list__item">
+            <a href="contact.html" class="header__nav__list__item__link">
+              <span class="header__nav__list__item__text">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class = "banner">
+    </div>
+  </header>
+      <main>
+        <div class = "container">
+
+          <h1>About Me</h1>
+          <section class="about">
+       <p>I am a second year student at the University of the Philippines located in Ilo-ilo City, Philippines.
+        I am currently studying Applied Mathematics. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quibusdam voluptas ex consectetur nihil doloribus est mollitia, adipisci distinctio quidem dolorem ipsa? Odit dolore ad, quia consectetur rerum nesciunt aliquam? </p>
+       <img src = "src/img/profile.jpg" alt = "profile" class = "profile">
+      </section>
       </div>
-    </header>
-    <main>
-      <div class = "portrait">
-        <img src="src/images/lennon.jpg" alt="Lennon"><br>
-        <span></span>
-      </div>
-      <p>This is my pet lemon. He is bugo.</p>
-    </main>
+      </main>
     <script src="" async defer></script>
-    <footer>
-      <p></p>
-    </footer>
   </body>
-  
 </html>
