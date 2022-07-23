@@ -4,29 +4,32 @@ body,html{
   padding: 0
 }
 *{
+  
   font-size: 16px;
+  box-sizing: content-box;
 
 }
 /* body{
   background-color: rgba(0, 0, 0, 0.89);
 } */
 main{
+
   color:gray;
 }
 body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
   /* background-color: rgb(235, 235, 235); */
   background-color: #24283b;
 }
 header{
   /* background-color: #f5f5f5; */
   /* border-bottom: 1px solid #e5e5e5; */
-  background-image : url("../img/banner.jpg");
-  background-size: cover;
+  background-image : url("../img/banner.png");
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom:50px;
   border: 0;
-  width: 100%;
+  width: 100vw;
   border: none;
   border-style: none;
 }
@@ -37,6 +40,9 @@ h1{
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+}
+a:hover{
+  text-decoration: none;
 }
 .head{
   display: flex;
@@ -80,8 +86,8 @@ h1{
 .about p{
   padding: 100px;
   width: 500px;
-  font-size: 1.5em;
-  text-align: center;
+  font-size: 1.2em;
+  text-align: left;
   margin-top: 10px;
   margin-bottom: 50px;
 }
@@ -96,7 +102,7 @@ h1{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 500px;
+  width: 900px;
   height: 100%;
   margin: 0 auto;
 }
@@ -146,17 +152,28 @@ h2{
 p{
   font-weight: normal;
 }
-
-.project1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 500px;
+.projects__list__item{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.projects__list__item .info{
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
-  margin: 100px;
+  background-color: blue;
+}
+.projects__list__item{
+  margin-bottom: 50px;
+}
+.project1{
+
+  width: 600px;
+  height: 100%;
   cursor: pointer;
+  left: 0;
+}
+.project2{
+  width: 100%;
 }
 .bplQwv {
   width: 40px;
@@ -234,7 +251,7 @@ p{
   padding: 10px;
   border-radius: 5px;
   width: 100px;
-  height: 50px;
+  height: 40px;
   position: relative;
   margin: 0 auto;
   margin-top: 20px;
@@ -251,7 +268,7 @@ p{
   -o-transition: 0.5s;
 }
 .certificates button:hover{
-  background-color: #24283b;
+  background-color: #333a58;
 }
 .certificates{
   display:flex;
@@ -283,6 +300,14 @@ footer{
   margin-top: 100px;
   color: darkgray;
 }
+a{
+  color:aqua;
+}
+footer p, footer span{
+  margin-bottom:5px;
+  letter-spacing: 3px;
+}
+
 @keyframes append-animate {
 	from {
 		transform: scale(0);
@@ -297,4 +322,24 @@ footer{
 /* animate new box */
 .new-box {
 	animation: append-animate .3s linear;
+}
+@media only screen and (max-width: 800px){
+  .about{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    width: 414px;
+  }
+  section{
+    width: 300px;
+  }
+  .side__StyleSideElement-gHFCsN .bplQwv{
+    display:none;
+  }
+  #para{
+    width: 200px;
+    overflow: hidden;
+  }
 }
