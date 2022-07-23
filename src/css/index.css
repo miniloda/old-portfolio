@@ -29,7 +29,7 @@ header{
   background-repeat: no-repeat;
   margin-bottom:50px;
   border: 0;
-  width: 100%;
+  width: 100vw;
   border: none;
   border-style: none;
 }
@@ -166,7 +166,7 @@ p{
   margin-bottom: 50px;
 }
 .project1{
- 
+
   width: 600px;
   height: 100%;
   cursor: pointer;
@@ -300,6 +300,14 @@ footer{
   margin-top: 100px;
   color: darkgray;
 }
+a{
+  color:aqua;
+}
+footer p, footer span{
+  margin-bottom:5px;
+  letter-spacing: 3px;
+}
+
 @keyframes append-animate {
 	from {
 		transform: scale(0);
@@ -314,4 +322,24 @@ footer{
 /* animate new box */
 .new-box {
 	animation: append-animate .3s linear;
+}
+@media only screen and (max-width: 800px){
+  .about{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    width: 414px;
+  }
+  section{
+    width: 300px;
+  }
+  .side__StyleSideElement-gHFCsN .bplQwv{
+    display:none;
+  }
+  #para{
+    width: 200px;
+    overflow: hidden;
+  }
 }
